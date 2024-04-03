@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Projet perce neige</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #26425A">
+    <a class="navbar-brand" href="#" style="color: #D87E7F"><img src="logo.png" alt="logo (❄ projet perce neige)" class="logo"></a>
+
+</nav>
+
+<!-- Sections -->
+<div id="section1" class="container-fluid min-vh-100" style="background-color: #8BB2C5">
+    <!-- Content for Section 1 -->
+    <div class="row justify-content-center">
+        <div class="container-fluid" style="width: 80vh; max-height: 100vh; display: flex; justify-content: center; align-items: center;">
+            <img src="sac_isto.png" class="img-fluid">
+        </div>
+        <div class="container-fluid" style="width: 100vh; min-height: 95vh; margin-top: 5vh; display: flex; justify-content: center; flex-direction: column">
+            <h2>La chaine du froid, en un coup d’oeil</h2>
+            <p>
+                Une glaçière doté d’un dispositif électronique, garantissant la préservation des produits frais et surgelés lors de leur transport
+            </p>
+
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn form_button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Acheter
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn discover-button" onclick="window.location.href='#section4';">
+                            Découvrir
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Acheter</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="resetBtn1"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- modal body -->
+                            <form id="multiStepForm" onsubmit="submitForm(event)">
+                                <!-- Step 1: Choice -->
+                                <div class="step">
+                                    <p>Quel produit vous interesse ?</p>
+                                    <div class="form-group">
+                                        <table class="table table-hover">
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <button type="button" class="btn choice choice-btn" data-value="Sac isotherme">Sac isotherme</button>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    <button type="button" class="btn choice choice-btn" data-value="Sac isotherme premium">Sac isotherme premium</button>
+                                                </th>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+
+                                        <input type="hidden" id="optionChoice" name="optionChoice">
+                                    </div>
+                                </div>
+
+                                <!-- Step 2: Additional Information -->
+                                <div class="step">
+                                    <div class="alert alert-primary" role="alert">
+                                        Le produit est encore en cours de développement. Renseignez vos informations de contact pour être le premier informé lorsqu'il sera disponible
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Nom:</label>
+                                        <input type="text" class="form-control" id="name" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" name="email">
+                                    </div>
+                                </div>
+                            </form>
+
+
+                            <!-- end of modal body -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="resetBtn">Annuler</button>
+                            <button type="submit" class="btn btn-primary" id="submitBtn" data-bs-dismiss="modal">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin Modal -->
+
+
+
+        </div>
+    </div>
+
+</div>
+
+<div id="section2" class="container-fluid min-vh-100" style="background-color: #26425A; padding-bottom: 5px; border-bottom: 3px solid black;">
+    <h2 class="section-title" style="color: #F8F5E1">Notre projet</h2>
+    <!-- Content for Section 2 -->
+    <div id="carouselExample" class="carousel slide" style="height: 80vh;">
+
+        <div class="carousel-inner" style="height: 100%">
+            <!-- Première slide -->
+            <div class="carousel-item active slide_ ">
+                <h3 class="carrousel-title">La recherche d'idée</h3>
+                <div class="row carrousel-text">
+                    <div class="col-md-4 col-12 column-border row-border">
+                        <p><span class="highlight1">Brainstorming</span> des potentiels problèmes</p>
+                        <img src="arrow.svg" class="arrow small-arrow">
+                        <p>
+                            Un proche a eu des <span class="highlight2">problèmes de congélateur</span>, un membre de l’équipe une <span class="highlight3">intoxication alimentaire</span> dû probablement à un produit pas frais
+                        </p>
+                        <img src="arrow.svg" class="arrow small-arrow">
+                        <p>
+                            On part à l’attaque du <span class="highlight4">contrôle</span> de la chaine du froid
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12 column-border row-border">
+                        <p>
+                            Afin de trouver l’idée de notre projet, nous avons dans un premier temps parlé de nos centres d’intérêts. Pour cela, nous nous sommes réunis de nombreuses fois afin de disucter, et pourtant l’idée que nous avons finalement choisie est arrivée au détour d’une conversation anodine, lorsque l’un d’entre nous a confié avoir eu un de ses proches malade à cause d’un aliment ayant subi une rupture de chaine du froid.
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <p>
+                            Ce sujet, qui touche à la santé de tous, nou a alors tout de suite emballé. Nous avons donc cherché un moyen de nous assurer rapidement une bonne gestion de la chaine du froid, afin de ne pas mettre en danger notre santé.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Deuxième slide -->
+            <div class="carousel-item slide_">
+                <h3 class="carrousel-title">La première idée</h3>
+                <div class="row carrousel-text">
+                    <div class="col-md-4 col-12 column-border row-border">
+                        <p>Le contrôle de la chaine du froid du <span class="highlight2">fabriquant jusqu'au client</span></p>
+                        <img src="arrow.svg" class="arrow small-arrow">
+                        <p><span class="problem">Problème 1 :</span> les grandes distributions nous font <span class="highlight4">obstacles</span>
+                            <br><span class="problem">Problème 2 :</span> Beaucoup de <span class="highlight4">normes</span> chez les <span class="highlight1">professionnels</span> donc pas très utile
+                            <br><span class="problem">Problème 3 :</span> les <span class="highlight1">2/3 des risques</span> sont chez le <span class="highlight1">consommateur</span>
+                        </p>
+                        <img src="arrow.svg" class="arrow small-arrow">
+                        <p>Trop d'obstacle, il faut changer l'orientation de notre projet</p>
+
+                    </div>
+                    <div class="col-md-4 col-12 column-border row-border">
+                        <p>A l'origine du projet, nous avions dans l'idée de mettre en place un système afin que le consommateur puisse checker rapidement la bonne gestion de la chaîne du foid, du conditionnement du produit à sa consommation.</p>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <p>Nous nous sommes rapidement rendus compte que les normes imposées étaient très strictes et que les contrôles étaient réguliers chez les professionnels. Ceux ci trouvaient notre idée innovante, mais nous acheter ce produit n'était pas dans leur intérêts.</p>
+                        <p>Nous avons également remarqué que 2/3 des ruptures de la chaine du froid avaient lieu entre le magasin et la consommation du produit. C'est donc sur cet axe que nous avons décidé d'agir.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Troisième slide -->
+            <div class="carousel-item slide_">
+                <h3 class="carrousel-title">Nouvel axe</h3>
+                <div class="row carrousel-text">
+                    <div class="col-md-4 col-12 column-border row-border">
+                        <p><span class="highlight1">2/3 des risques</span> sont chez le consommateur</p>
+                        <img src="arrow.svg" class="arrow small-arrow">
+                        <p>Il faut mettre en place un suivi de la chaîne du froid <span class="highlight3">pour/par le client</span></p>
+                        <img src="arrow.svg" class="arrow small-arrow">
+                        <p>Naissance du projet <span>perce neige</span> qui a pour but de peremttre à tout le monde de contrôler la chaîne du froid durant ses <span class="highlight4">courses</span> et sur le <span class="highlight3">trajet du retour</span> afin de limiter les risques d'une rupture</p>
+                    </div>
+                    <div class="col-md-4 col-12 column-border row-border">
+                        <p>A partir des constatations de la deuxième étape, nous avons pivoté afin de mettre en place un suivi de la chaîne du froid par le client et dans son intérêt.</p>
+                        <p>Notre produit permet donc au client de s'assurer en rentrant chez lui que ses produits sont toujours consommables et qu'ils n'ont pas été détériorés par la chaleur extérieur.</p>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <p>Ainsi est né le projet perce neige, qui permettra à chacun de consommer des aliments qui soient toujours sain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+<div id="section3" class="container-fluid vh-100" style="background-color: #26425A; ">
+    <h2 class="section-title" style="color: #F8F5E1">Les risques</h2>
+    <!-- Content for Section 2 -->
+    <div id="carouselExample2" class="carousel slide" style="height: 80vh;">
+
+        <div class="carousel-inner" style="height: 100%;">
+            <!-- Première slide -->
+            <div class="carousel-item active slide_" style="object-fit: cover;">
+                <img src="poste1.png" alt="poste de prévention sur la chaine du froid" class="section-image">
+
+            </div>
+            <!-- Deuxième slide -->
+            <div class="carousel-item slide_" style="object-fit: cover">
+                <img src="poste2.png" alt="poste de prévention sur la chaine du froid" class="section-image">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+</div>
+
+<div id="section4" class="container-fluid min-vh-100" style="background-color: #8BB2C5">
+    <h2 class="section-title" style="color: #26425A">Nos solutions</h2>
+
+    <div class="row" style="color: #F8F5E1">
+        <div class="col-md-6 d-flex justify-content-center">
+            <div class="square_product">
+                <h3 class="product-title">Sac isotherme</h3>
+                <ul>
+                    <li>Sac isotherme</li>
+                    <li>Matériaux renouvelables</li>
+                    <li>Capteurs de température</li>
+                    <li>détection et affichage
+                        électronique des ruptures
+                        de chaînes du froid</li>
+                </ul>
+                <img src="sac_classique.png" alt="sac classique" class="product-picture">
+            </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+            <div class="square_product">
+                <h3 class="product-title">Sac isotherme premium</h3>
+                <ul>
+                    <li>Tout les avantages du sac isotherme</li>
+                    <img src="plus.svg" alt="+" class="arrow" style="width: 13%">
+                    <li>Indicateur visuel du temps restant</li>
+                    <li>Precision accrue</li>
+
+                </ul>
+                <img src="sac_premium.png" alt="sac premium" class="product-picture">
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="section5" class="container-fluid min-vh-100" style="background-color: #26425A">
+    <h2 class="section-title" style="color: #F8F5E1">Témoignages</h2>
+    <!-- Content for Section 5 -->
+    <!-- alignement vertical à revoir -->
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+            <div class="square_info p-4">
+                <img src="quote1.svg">
+                <p class="quote-paragraph">Cette glacière est trop stylé, maintenant je suis la personne la plus fashion de tout le Picard</p>
+                <img src="quote2.svg" class="quote-end">
+                <p class="quoted-name">Gugus 1</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+            <div class="square_info p-4">
+                <img src="quote1.svg">
+                <p class="quote-paragraph">C’est génial : depuis que j’ai acheté cette glacière, je ne  tombe plus malade</p>
+                <img src="quote2.svg" class="quote-end">
+                <p class="quoted-name">Gugus 2</p>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+            <div class="square_info p-4">
+                <img src="quote1.svg">
+                <p class="quote-paragraph">Que c’est agréable de pouvoir faire ses achats de surgelés l’esprit tranquille, sans avoir à se demander si les surgelés ont trop attendus</p>
+                <img src="quote2.svg" class="quote-end">
+                <p class="quoted-name">Gugus 3</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer mt-auto py-3" style="background-color: #D87E7F">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    © 2024 - Projet perce neige - Tout droits réservés
+                </p>
+                <p>
+                    Par Justine TROUILLOT, Clara BLAIN, Naïs CALAMEL, Gabin CHAPUIS, Noël LAROSE et Clément CHAPARD
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p style="font-weight: bold">
+                    Nous contacter :
+                </p>
+                <p>
+                    projetperceneige.com
+                    <br>
+                    0788166896
+                    <br>
+                    <a href="https://www.instagram.com/projet.perce.neige/" style="color: rgb(33,32,41);">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Instagram_simple_icon.svg" alt="logo instagram" style="width: 3%;">
+                    projet.perce.neige
+                    </a>
+                </p>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var currentStep = 0;
+        var steps = $('.step');
+
+        function showStep(step) {
+            steps.hide().eq(step).show();
+            if (step === 0) {
+                $('.prev').hide();
+            } else {
+                $('.prev').show();
+            }
+            if (step === steps.length - 1) {
+                $('.next').hide();
+            } else {
+                $('.next').show();
+            }
+        }
+
+        showStep(currentStep);
+
+        $('.next').click(function() {
+            currentStep++;
+            showStep(currentStep);
+        });
+
+        $('.prev').click(function() {
+            currentStep--;
+            showStep(currentStep);
+        });
+
+        $('.choice').click(function() {
+            var choiceValue = $(this).data('value');
+            $('#optionChoice').val(choiceValue);
+            currentStep++; // Move to the next step
+            showStep(currentStep);
+        });
+
+        $('#submitBtn').click(function() {
+            $('#multiStepForm').submit(); // Submit the form
+            $('#multiStepForm')[0].reset();
+            currentStep = 0;
+            showStep(currentStep);
+        });
+
+        $('#resetBtn').click(function() {
+            $('#multiStepForm')[0].reset();
+            currentStep = 0;
+            showStep(currentStep);
+        });
+        $('#resetBtn1').click(function() {
+            $('#multiStepForm')[0].reset();
+            currentStep = 0;
+            showStep(currentStep);
+        });
+    });
+</script>  <!-- js du multistep form -->
+
+<script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database-compat.js"></script>
+<script>
+    // Configuration Firebase
+    const firebaseConfig = {
+        apiKey: "AIzaSyDMgKj1IBEr-aGWF7PwdZhNkGttzBNZjyc",
+        authDomain: "campusdev-8bafa.firebaseapp.com",
+        databaseURL: "https://campusdev-8bafa-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "campusdev-8bafa",
+        storageBucket: "campusdev-8bafa.appspot.com",
+        messagingSenderId: "443784566222",
+        appId: "1:443784566222:web:513bfd5991d212652c079f",
+        measurementId: "G-91HN8221YJ"
+    };
+
+    // Initialisation de Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Référence à la base de données
+    const database = firebase.database();
+
+    // Fonction pour soumettre le formulaire
+    function submitForm(event) {
+        event.preventDefault();
+        const formData = {
+            optionChoice: document.getElementById('optionChoice').value,
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value
+        };
+        firebase.database().ref('formData').push(formData)
+            .then(() => {
+                //alert('Form data submitted successfully');
+
+            })
+            .catch((error) => {
+                console.error('Error submitting form data:', error);
+            });
+    }
+</script> <!-- js de firebase -->
+
+
+</body>
+</html>

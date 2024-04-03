@@ -1,0 +1,235 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.square_info {
+    border-radius: 10%;
+    background-color: #8BB2C5;
+    aspect-ratio: 1/1;
+    vertical-align: middle;
+    margin-top: 10%;
+
+}
+
+.slide_ {
+    background-color: #8BB2C5;
+    border-radius: 10vh;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.column-border {
+    border-right: 3px solid #000; /* Vertical line between columns */
+    padding-right: 15px; /* Adjust padding to separate text from border */
+}
+
+@media (max-width: 767.98px) {
+    .row-border {
+        border-bottom: 3px solid #000; /* Horizontal line between rows on smaller screens */
+        margin-bottom: 20px; /* Adjust margin to separate rows */
+        padding-bottom: 20px; /* Adjust padding to separate text from border */
+    }
+
+    .column-border {
+        border-right: none; /* Remove vertical line between columns on smaller screens */
+        padding-right: 0; /* Remove padding */
+    }
+}
+
+.form_button {
+    background-color: #D87E7F;
+    border-color: #D87E7F;
+    color: #F8F5E1;
+    width: 100%;
+    height: 100%;
+    font-size: x-large;
+}
+.form_button:hover {
+    /*background-color: #e09899; /*coef de 0.9 pour obscurcir*/
+    background-color: transparent;
+    border-color: #D87E7F;
+    color: #D87E7F;
+    border-width: 3px;
+}
+
+.discover-button {
+    background-color: transparent;
+    border-color: #D87E7F;
+    color: #D87E7F;
+    width: 100%;
+    height: 100%;
+    font-size: x-large;
+    border-width: 3px;
+}
+
+.discover-button:hover {
+    background-color: #D87E7F;
+    border-color: #D87E7F;
+    color: #F8F5E1;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.carousel-item{
+    padding: 5%;
+}
+
+.carrousel-title{
+    text-align: center;
+}
+
+
+.highlight1 {
+    display: inline-block; /* Ensure the span respects its content size */
+    background-image: url('Vector_1.svg'); /* URL of your SVG image */
+    background-size: contain; /* Cover the entire span */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding: 0px 0px; /* Padding around the content */
+
+}
+
+.highlight2 {
+    display: inline-block; /* Ensure the span respects its content size */
+    background-image: url('Vector_2.svg'); /* URL of your SVG image */
+    background-size: contain; /* Cover the entire span */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding: 0px 0px; /* Padding around the content */
+
+}
+
+.highlight3 {
+    display: inline-block; /* Ensure the span respects its content size */
+    background-image: url('Vector_3.svg'); /* URL of your SVG image */
+    background-size: contain; /* Cover the entire span */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding: 0px 0px; /* Padding around the content */
+
+}
+
+.highlight4 {
+    display: inline-block; /* Ensure the span respects its content size */
+    background-image: url('Vector_4.svg'); /* URL of your SVG image */
+    background-size: contain; /* Cover the entire span */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding: 0px 0px; /* Padding around the content */
+
+}
+
+.arrow{
+    display: block; /* Makes the image a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.small-arrow{
+    width: 3%;
+}
+
+.section-image{
+    display: block; /* Makes the image a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+hr{
+    margin: 0px;
+    border-top: 3px solid #26425A;
+    border-color: #26425A;
+    background-color: #26425A;
+}
+
+.quote-paragraph{
+    text-align: center;
+    font-style: italic;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: large;
+}
+
+.quote-end{
+    display: block;
+    margin-left: auto;
+}
+
+.quoted-name{
+    text-align: right;
+    margin-top: 5%;
+    font-size: x-large;
+}
+
+/*.problem{
+    text-decoration: underline;
+    font-weight: bold;
+}*/
+
+.square_product{
+    border-radius: 10%;
+    background-color: #26425A;
+    aspect-ratio: 1/1;
+    vertical-align: middle;
+    margin-top: 5%;
+    /*height: 80vh;*/
+    margin-bottom: 5%;
+    overflow: hidden;
+    width: 75%;
+    height: auto;
+
+}
+
+.product-title{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.product-picture{
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    width: 50%;
+    height: auto;
+}
+
+nav{
+    height: 10vh;
+
+}
+
+.navbar{
+    padding: 0;
+}
+
+
+
+.logo{
+    display: block; /* Ensure the image is displayed as a block element */
+    max-height: 8vh;
+    width: auto;
+    margin-top: 0%;
+}
+
+.choice-btn{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.carrousel-text{
+    font-size: small;
+}
+
+
+
+
